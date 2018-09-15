@@ -36,7 +36,7 @@ https://github.com/kosslab-kr/gitCodeShare.com/blob/master/docs/index.md
 | plugin: 🔌         | `npm run contributors:add <username> plugin`         | question: 💬        | `npm run contributors:add <username> question`        |
 | review: 👀         | `npm run contributors:add <username> review`         | talk: 📢            | `npm run contributors:add <username> talk`            |
 | test: ⚠️           | `npm run contributors:add <username> test`           | tool: 🔧            | `npm run contributors:add <username> tool`            |
-| translation: 🌍    | `npm run contributors:add <username> translation`    | tutorial: ✅         | `npm run contributors:add <username> tutorial`        |
+| translation: 🌍    | `npm run contributors:add <username> translation`    | tutorial: ✅        | `npm run contributors:add <username> tutorial`        |
 | video: 📹          | `npm run contributors:add <username> video`          |                     |                                                       |
 
 > We follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification.
