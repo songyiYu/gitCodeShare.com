@@ -2,18 +2,25 @@ import styled from 'styled-components';
 import { Button } from 'antd';
 
 const InlineFlexButton = styled(Button as any)`
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 1;
-  background-color: transparent;
-  color: ${props => props.theme.primaryTextColor};
-
-  &:hover,
-  &:focus,
-  &:active {
+  &.ant-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
     background-color: transparent;
     color: ${props => props.theme.primaryTextColor};
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: transparent;
+    }
+
+    i {
+      display: inherit;
+      align-items: inherit;
+      justify-content: inherit;
+    }
   }
 `;
 
@@ -76,4 +83,37 @@ const DownloadButton: typeof RoundedButton = styled(RoundedButton as any)`
   }
 `;
 
-export { RoundedButton, GithubButton, BorderlessButton, DownloadButton, SmDownloadButton };
+const LineButton: typeof RoundedButton = styled(RoundedButton as any)`
+  &.ant-btn {
+    max-width: 111px;
+    width: 100%;
+    height: 40px;
+    background-color: ${props => props.theme.primaryColor};
+    border-color: ${props => props.theme.colorPalette.neonBlue};
+    margin-left: 15px;
+
+    &:first-child {
+      margin-left: auto;
+    }
+
+    span {
+      font-size: 14px;
+    }
+  }
+`;
+
+const DropDownButton: typeof RoundedButton = styled(RoundedButton as any)`
+  &.ant-btn {
+    min-width: 150px;
+    height: 30px;
+    border: solid 1px #dbe3e9;
+    justify-content: space-between;
+    padding: 6px 10px;
+    transition: none;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+`;
+
+export { RoundedButton, GithubButton, BorderlessButton, DownloadButton, SmDownloadButton, LineButton, DropDownButton };
